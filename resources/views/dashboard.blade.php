@@ -34,7 +34,7 @@
                 <li>{{ $item }}</li>
             @endforeach
         </ul>
-        <a class="btn btn-small" href="{{ route('pengelolaan', ['username' => $username]) }}">Kelola Pasukan</a>
+        <a class="btn btn-small" href="{{ route('pengelolaan', ['username' => $username]) }}">Tampilkan Semua Pasukan</a>
     </div>
 </section>
 @endsection
