@@ -1,36 +1,26 @@
-# UTS_PWEB_NIM
+# Barracks Manager: Pengelolaan Pasukan Clash of Clans
 
-## Barracks Manager: Pengelolaan Pasukan Clash of Clans
+Web berbasis **Laravel** untuk menampilkan statistik pemain Clash of Clans. Disini juga menampilkan strategi favorit, pasukan favorit, jumlah bintang, jumlah perang clan, level town hall saat ini dan deskripsi seluruh pasukan yang ada di Clash of Clans
 
-Aplikasi web berbasis **Laravel (MVC)** untuk simulasi login dan pengelolaan daftar pasukan bertema Clash of Clans. Username dari form login diteruskan ke Dashboard dan Profil lewat request parameter, dan data pasukan dikirim dari Controller ke View lalu ditampilkan dengan `@foreach`.
+# Preview Web
 
-> Aplikasi penggemar, tidak berafiliasi dengan Supercell.
+### Halaman Login
+<img width="1896" height="907" alt="image" src="https://github.com/user-attachments/assets/652928fb-b176-4c53-b205-5e4769c701e6" />
 
-## Screenshot
+### Beranda
+<img width="1877" height="907" alt="image" src="https://github.com/user-attachments/assets/c8183a07-b7f4-4db4-82b2-6fc5425de22e" />
 
-_(Tambahkan screenshot Login, Dashboard, Pengelolaan, dan Profil di sini)_
+### Profil
+<img width="1897" height="906" alt="image" src="https://github.com/user-attachments/assets/2d2f8888-0a12-45ba-8d21-9938ed5a8426" />
 
-## Fitur
-- Login (username lewat request parameter GET)
+### Pasukan
+<img width="1882" height="907" alt="image" src="https://github.com/user-attachments/assets/e8a6634b-68cb-45b1-8cfd-6d5ac7e04569" />
+
+
+
+
+# Fitur
 - Dashboard dengan ringkasan statistik pasukan
 - Halaman pengelolaan dengan filter pasukan Darat / Udara
 - Halaman profil
 - Tampilan responsif
-
-## Struktur Utama
-- `routes/web.php`
-- `app/Http/Controllers/PageController.php`
-- `resources/views/layouts/app.blade.php`
-- `resources/views/{login,dashboard,pengelolaan,profile}.blade.php`
-- `resources/views/components/{navbar,footer}.blade.php`
-- `resources/views/partials/{stat-card,troop-card}.blade.php`
-- `public/css/style.css`
-
-## Cara Menjalankan
-```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan serve
-```
-Buka `http://127.0.0.1:8000`.
